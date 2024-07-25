@@ -39,7 +39,7 @@ Choose the appropriate guide based on your operating system:
 
 4. Prepare your dataset as described in the setup guides.
 
-## Running the Model
+### Running the Model
 
 You can run the model either using provided scripts or direct commands.
 
