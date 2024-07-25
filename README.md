@@ -18,7 +18,7 @@ Choose the appropriate guide based on your operating system:
 1. Clone this repository:
 
    ```
-   git clone https://github.com/scalable-design-participation-lab/re-blocking.git
+   git clone https://github.com/scalable-design-participation-lab/building2parcel-pix2pix.git
    cd re-blocking
    ```
 
@@ -39,19 +39,56 @@ Choose the appropriate guide based on your operating system:
 
 4. Prepare your dataset as described in the setup guides.
 
+## Running the Model
+
+You can run the model either using provided scripts or direct commands.
+
+### Using Scripts
+
 5. Train the model:
 
-   - For Windows, use the `[train_pix2pix].bat` script
-   - For Linux, use the `[train_pix2pix].sh` script
+   - For Windows, use the `train_pix2pix.bat` script
+   - For Linux, use the `train_pix2pix.sh` script
 
 6. Test the model:
-   - For Windows, use the `[test_pix2pix].bat` script
-   - For Linux, use the `[test_pix2pix].sh` script
+   - For Windows, use the `test_pix2pix.bat` script
+   - For Linux, use the `test_pix2pix.sh` script
+
+### Using Direct Commands
+
+Alternatively, you can run the model directly using Python commands:
+
+5. Train the model:
+
+   ```
+   python train.py --dataroot ./datasets/your_dataset --name your_experiment_name --model pix2pix --direction AtoB
+   ```
+
+6. Test the model:
+   ```
+   python test.py --dataroot ./datasets/your_test_dataset --name your_experiment_name --model pix2pix --direction AtoB
+   ```
+
+Replace `your_dataset`, `your_experiment_name`, and other parameters as needed for your specific use case.
+
+Common parameters:
+
+- `--dataroot`: Path to the dataset
+- `--name`: Name of the experiment (this will create a folder under `./checkpoints` to store results)
+- `--model`: Model to use (pix2pix, cyclegan, etc.)
+- `--direction`: AtoB or BtoA
+
+For a full list of available options, refer to the `options` directory in the project or run:
+
+```
+python train.py --help
+python test.py --help
+```
 
 Note: If you're cloning this repository after the submodule has been added, use the following command to clone the repository including all submodules:
 
 ```
-git clone --recurse-submodules https://github.com/scalable-design-participation-lab/re-blocking.git
+git clone --recurse-submodules https://github.com/scalable-design-participation-lab/building2parcel-pix2pix.git
 ```
 
 ## Results
