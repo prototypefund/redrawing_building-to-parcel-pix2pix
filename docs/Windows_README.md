@@ -150,7 +150,7 @@ Note: Ensure that you adjust the paths in both scripts to match your specific di
 
 ## Additional Resources
 
-- [Pix2Pix Official Documentation](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+- [Pix2Pix Documentation](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 - [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
 - [Anaconda Documentation](https://docs.anaconda.com/)
 - [NVIDIA CUDA Documentation](https://docs.nvidia.com/cuda/)

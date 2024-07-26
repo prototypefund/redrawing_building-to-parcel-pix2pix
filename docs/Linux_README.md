@@ -189,7 +189,7 @@ watch -n 0.1 nvidia-smi
 
 ## Additional Resources
 
-- [Official CycleGAN and Pix2Pix Repository](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+- [CycleGAN and Pix2Pix Repository](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 - [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
 - [NVIDIA CUDA Documentation](https://docs.nvidia.com/cuda/)
 
