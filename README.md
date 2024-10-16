@@ -1,4 +1,4 @@
-# building2parcel-pix2pix
+# building-to-parcel-pix2pix
 
 This repository contains the implementation of CycleGAN and Pix2Pix models for image-to-image translation tasks. It provides comprehensive setup guides for both Windows and Linux environments.
 
